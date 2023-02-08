@@ -1,0 +1,287 @@
+.messenger{
+    height: 100vh ;
+    display: flex ;
+}
+
+.chatMenu{
+    flex: 1.2 ;
+}
+
+.chatMenuInput{
+    width: 90% ;
+    padding: 10px 0 ;
+    border: none ;
+    border-bottom: 1px solid gray;
+
+}
+
+.chatBox{
+    flex: 3 ;
+}
+
+.chatBoxWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative ;
+}
+
+.chatBoxTop{
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 10px ;
+}
+
+.chatBoxBottom{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chatMessageInput{
+    width: 80% ;
+    height: 90px;
+    padding: 10px ;
+}
+
+.chatSubmitButton{
+    width: 70px;
+    height: 40px ;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(143, 138, 138);
+    color: white
+}
+
+.chatMenuWrapper, .chatBoxWrapper{
+    padding: 10px ;
+    height: 100% ;
+}
+
+.chatBoxWrapper{
+    margin-right: 80px;
+}
+
+.noConversationText{
+    position: absolute;
+    top: 10% ;
+    font-size: 50px ;
+    color: rgb(179, 176, 176);
+    cursor: default ;
+}
+
+
+
+/* =================================================== */
+
+.conversation{
+    display: flex ;
+    align-items: center;
+    padding: 10px ;
+    cursor: pointer; 
+    margin-top: 20px; 
+}
+
+.conversation:hover{
+    background-color: rgb(243, 244, 245);
+    border-radius: 20px ;
+}
+
+.conversationImg{
+    width: 40px ;
+    height: 40px ;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.conversationName{
+    font-weight: 660;
+}
+
+
+/* ===================================================== */
+
+.message{
+    display: flex ;
+    flex-direction: column;
+    margin-top: 20px ;
+}
+
+.messageTop{
+    display: flex ;
+}
+
+.messageImg{
+    width: 32px;
+    height: 32px ;
+    border-radius: 50%;
+    object-fit: cover ;
+    margin-right: 10px;
+}
+
+.messageText{
+    padding:10px ;
+    border-radius: 20px ;
+    background-color: rgb(41, 141, 235);
+    color: white ;
+    max-width: 600px ;
+}
+
+.messageBottom{
+    font-size: 12px;
+    margin-top: 10px ;
+}
+
+.message.own{
+    align-items: flex-end;
+}
+
+.message.own .messageText{
+    color: black;
+    background-color: rgb(245, 241, 241);
+}
+
+
+/* ======================================================== */
+
+.addToChatDiv:hover{
+    background-color: rgb(185, 185, 185);
+    /* cursor: pointer; */
+    border-radius: 7px;
+}
+
+.detailBtn{
+    margin-top: 5px ;
+}
+
+.addToChat{
+    padding-left: 8px;
+    width: 40px ;
+    height: 40px ;
+    border-radius: 50%;
+    object-fit:contain;
+    margin-right: 20px;
+    /* cursor: pointer; */
+}
+
+/* .addToChat:hover{
+    background-color: rgb(216, 216, 216);
+} */
+
+.addToChatBtn{
+    border-radius: 10px;
+    margin-left: -15px;
+}
+
+/* ======================================================== */
+
+.sellerBtn{
+    margin-top: 5px ;
+    margin-left: 20px ;
+}
+
+.sellBtn{
+    border-radius: 5px ;
+}
+
+.sellBtn:hover{
+    background-color: red;
+}
+
+/* ======================================================== */
+
+.delBtnImg{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 20px ;
+}
+.delBtnImg:hover{
+    cursor: pointer;
+}
+
+/* ======================================================== */
+
+.viewDetailNav{
+    display: flex;
+    flex-direction: column;
+    height: 75%;
+    width: 93%;
+    justify-content: space-evenly;
+    background-color: powderblue;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.userNameDiv{
+    padding-left: 10px;
+    font-size: 70px ;
+    color:black;
+}
+
+.Adspan{
+   padding-left: 10px;
+   padding-top: 20px;
+   font-size: 15px;
+   font-weight: bold;
+}
+
+.ViewBackBtn{
+    margin-left: 10px;
+}
+
+.ViewBackBtn:hover{
+    background-color: rgb(226, 224, 221);
+}
+
+/* ============================================================ */
+
+
+.auth-modal{
+    position: absolute;
+    left:0 ;
+    right:0 ;
+    top : 50px ;
+    margin-left: auto;
+    margin-right: auto;
+    max-width : 360px ;
+    height: 600px ;
+    background-color: rgb(255,255,255);
+    border-radius: 10px;
+    padding: 40px ; 
+  }
+  
+  .auth-modal .close-icon{
+    float: right; 
+  }
+  
+  .auth-modal form{
+    display:flex ;
+    flex-direction : column ;
+  }
+  
+  .auth-modal .emailclass,.ownerNameclass{
+    padding: 8px ;
+    margin: 8px ;
+    font-size :17px ;
+  }
+  
+  .auth-modal .passwordclass{
+    padding: 8px ;
+    margin: 8px ;
+    font-size :17px ;
+  }
+  
+  
+  .auth-modal .cpasswordclass{
+    padding: 8px ;
+    margin: 8px ;
+    font-size :17px ;
+  }
+
+  .signInBtn:hover{
+    background-color: rgb(206, 207, 207);
+  }

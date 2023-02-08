@@ -1,0 +1,4 @@
+server/node_modules
+server/.gitignore
+socket/node_modules
+socket/.gitignore
